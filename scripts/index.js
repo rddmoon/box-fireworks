@@ -505,7 +505,7 @@ x = setInterval(function() {
     }
 
     function showCake() {
-      $("#cakeContain").load(" #cakeContain > *");
+      $( "#cakeContain" ).load(window.location.href + " #cakeContain" );
       $("#cakeContain").show();
       setTimeout(dragCake, 5000);
     }
