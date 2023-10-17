@@ -510,7 +510,7 @@ x = setInterval(function() {
 
     function showCake() {
       setTimeout(cakeReload, 3000);
-      setTimeout(dragCake, 5000);
+      setTimeout(dragCake, 6000);
     }
 
     init();
