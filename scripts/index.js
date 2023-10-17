@@ -5,7 +5,7 @@ const canvasC = document.getElementById('c');
 const cakeContain = document.getElementById('cakeContain');
 
 const config = {
-  birthdate: 'Oct 17, 2023',
+  birthdate: 'Oct 23, 2023',
   name: 'DIVA!'
 };
 
