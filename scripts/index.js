@@ -423,8 +423,10 @@ x = setInterval(function() {
     if (done) for (let l = 0; l < letters.length; ++l) letters[l].reset();
   }
 
-  function dragCake() {
+  function cakeReload(){
     $( "#cakeContain" ).load(window.location.href + " #cakeContain" );
+  }
+  function dragCake() {
     $("#cakeContain").show();
     cakeContain.style.position = 'absolute';
     cakeContain.style.width = '300px';
@@ -507,6 +509,7 @@ x = setInterval(function() {
     }
 
     function showCake() {
+      setTimeout(cakeReload, 3000);
       setTimeout(dragCake, 5000);
     }
 
