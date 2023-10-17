@@ -424,13 +424,14 @@ x = setInterval(function() {
   }
 
   function dragCake() {
+    $( "#cakeContain" ).load(window.location.href + " #cakeContain" );
+    $("#cakeContain").show();
     cakeContain.style.position = 'absolute';
     cakeContain.style.width = '300px';
     // cakeContain.style.height = '200px';
     cakeContain.style.left = '50%';
     cakeContain.style.bottom = 0;
     cakeContain.style.margin = '0 0 0 -135px';
-    $("#plate").show();
     cakeContain.style.animation = 'drag 2s';
   }
 
@@ -506,9 +507,6 @@ x = setInterval(function() {
     }
 
     function showCake() {
-      $( "#cakeContain" ).load(window.location.href + " #cakeContain" );
-      $("#cakeContain").show();
-      $("#plate").hide();
       setTimeout(dragCake, 5000);
     }
 
