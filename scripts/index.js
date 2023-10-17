@@ -424,6 +424,7 @@ x = setInterval(function() {
   }
 
   function dragCake() {
+    $("#plate").show();
     cakeContain.style.position = 'absolute';
     cakeContain.style.width = '300px';
     // cakeContain.style.height = '200px';
@@ -507,6 +508,7 @@ x = setInterval(function() {
     function showCake() {
       $( "#cakeContain" ).load(window.location.href + " #cakeContain" );
       $("#cakeContain").show();
+      $("#plate").hide();
       setTimeout(dragCake, 5000);
     }
 
