@@ -425,7 +425,7 @@ x = setInterval(function() {
 
   function cakeReload(){
     $("#cakeContain").show();
-    setTimeout(dragCake, 6500);
+    setTimeout(dragCake, 6000);
   }
   function dragCake() {
     cakeContain.style.position = 'absolute';
@@ -510,7 +510,7 @@ x = setInterval(function() {
 
     function showCake() {
       $( "#cakeContain" ).load(window.location.href + " #cakeContain" );
-      setTimeout(cakeReload, 2200);
+      setTimeout(cakeReload, 3000);
     }
 
     init();
