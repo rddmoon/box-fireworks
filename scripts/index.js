@@ -423,7 +423,11 @@ x = setInterval(function() {
     if (done) for (let l = 0; l < letters.length; ++l) letters[l].reset();
   }
 
-  function cakeReload(){
+  function cakeReload() {
+    $( "#cakeContain" ).load(window.location.href + " #cakeContain" );
+    setTimeout(cakeShow, 1000);
+  }
+  function cakeShow(){
     $("#cakeContain").show();
     setTimeout(dragCake, 6000);
   }
@@ -433,7 +437,7 @@ x = setInterval(function() {
     // cakeContain.style.height = '200px';
     cakeContain.style.left = '50%';
     cakeContain.style.bottom = 0;
-    cakeContain.style.margin = '0 0 0 -135px';
+    cakeContain.style.margin = '0 0 0 -150px';
     cakeContain.style.animation = 'drag 2s';
   }
 
@@ -509,7 +513,6 @@ x = setInterval(function() {
     }
 
     function showCake() {
-      $( "#cakeContain" ).load(window.location.href + " #cakeContain" );
       setTimeout(cakeReload, 3000);
     }
 
