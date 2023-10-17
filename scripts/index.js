@@ -424,11 +424,10 @@ x = setInterval(function() {
   }
 
   function cakeReload(){
-    $( "#cakeContain" ).load(window.location.href + " #cakeContain" );
-    setTimeout(dragCake, 1000);
+    $("#cakeContain").show();
+    setTimeout(dragCake, 3000);
   }
   function dragCake() {
-    $("#cakeContain").show();
     cakeContain.style.position = 'absolute';
     cakeContain.style.width = '300px';
     // cakeContain.style.height = '200px';
@@ -510,7 +509,8 @@ x = setInterval(function() {
     }
 
     function showCake() {
-      setTimeout(cakeReload, 5000);
+      $( "#cakeContain" ).load(window.location.href + " #cakeContain" );
+      setTimeout(cakeReload, 2000);
     }
 
     init();
